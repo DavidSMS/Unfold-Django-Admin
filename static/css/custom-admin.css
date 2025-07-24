@@ -1,0 +1,129 @@
+/* Custom CSS for HR Management System Admin */
+
+/* Dashboard customizations */
+.hr-dashboard-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hr-stat-card {
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.hr-stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+.hr-stat-label {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+/* Employee photo styling */
+.employee-photo-preview {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Status badges */
+.status-active {
+    background-color: #10b981;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+}
+
+.status-inactive {
+    background-color: #f59e0b;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+}
+
+.status-terminated {
+    background-color: #ef4444;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+}
+
+/* Form improvements */
+.hr-form-section {
+    background: #f9fafb;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border-left: 4px solid #4f46e5;
+}
+
+.hr-form-section h3 {
+    color: #374151;
+    margin-bottom: 10px;
+}
+
+/* Table improvements */
+.hr-table-hover tr:hover {
+    background-color: #f3f4f6;
+}
+
+/* Quick actions */
+.hr-quick-actions {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.hr-quick-action-btn {
+    background: #4f46e5;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+
+.hr-quick-action-btn:hover {
+    background: #3730a3;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hr-stat-card {
+        margin: 5px 0;
+    }
+    
+    .hr-quick-actions {
+        flex-direction: column;
+    }
+}
+
+/* Animation for loading states */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.hr-loading {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+} 
